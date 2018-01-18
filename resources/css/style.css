@@ -1,0 +1,16 @@
+html {
+  background-color: black;
+}
+
+body h1 {
+  color: white;
+  font-family: helvetica;
+  font-weight: bold;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.image img {
+  width: 400px;
+  height: 300px;
+}
