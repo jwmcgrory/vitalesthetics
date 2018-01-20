@@ -18,10 +18,10 @@ body {
 }
 
 .main img {
-  width: 15rem;
+  width: 25rem;
   display: block;
   margin: auto;
-  margin-top: 5rem;
+  margin-top: 2.5rem;
 }
 
 nav {
