@@ -1,0 +1,7 @@
+Main Font Font: Steelfish
+Main Font Color: #02081b
+Slogan Font Font: Arvo Regular
+Slogan Font Color: #205663
+Monogram Font Font: Liner Notes Bold
+Monogram Font Color: #fff
+Container Color: #fff

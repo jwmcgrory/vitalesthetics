@@ -11,21 +11,21 @@ body {
   margin: 0 auto;
 }
 
-.main {
+header {
   height: 30rem;
   padding-top: 1rem;
-  background-color: black;
+  background-color: #F69A9A;
 }
 
-.main img {
-  width: 25rem;
+header img {
+  width: 22rem;
   display: block;
   margin: auto;
   margin-top: 2.5rem;
 }
 
 nav {
-  background-color: OrangeRed;
+  background-color: #EF4566;
   color: White;
 }
 
@@ -39,70 +39,28 @@ li {
   padding: 0.75rem 1.25rem;
 }
 
-.supporting,
-.rating,
-.gallery,
-.location {
-  margin: 4em auto;
+main {
+  background-color: #C8C8A9;
 }
 
-.supporting {
+.about {
+  background-color: #F9CDAE;
+}
+
+.flex {
+  height: 30rem;
   display: flex;
-  align-items: flex-start;
-  padding: 0 1rem;
-}
-
-.supporting img {
-  width: 10%;
-  height: 10%;
-  margin-right: 5%;
-}
-
-.rating {
-  background-color: OrangeRed;
-  height: 20rem;
-  padding: 0 1rem;
-  color: white;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.rating h1 {
-  font-size: 2.5rem;
+.about img {
+  width: 20rem;
 }
 
-.gallery img {
-  display: block;
-  width: 30%;
-  margin: 1.5%;
-  float: left;
-}
-
-.clearfix {
-  clear: both;
-}
-
-.location {
-  text-align: center;
-  margin-bottom: 7rem;
-}
-
-.location img {
+.row img {
   width: 100%;
-}
-
-footer {
-  background-color: OrangeRed;
-  padding: 0 1rem;
-}
-
-footer .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5em 0;
-  color: white;
 }
 
 @media only screen and (max-width: 960px) {
@@ -115,25 +73,11 @@ footer .container {
   .supporting img {
     display: none;
   }
-    .gallery img {
-    width: 65%;
-    margin: 0 auto;
-    display: block;
-    float: none;
-    padding: 2rem 0;
-  }
-    footer nav {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 470px) {
   h1 {
     font-size: 2rem;
 
-  }
-  .gallery img {
-    width: 100%;
-    margin: 0;
   }
 }
