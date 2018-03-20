@@ -48,7 +48,7 @@ main {
 }
 
 .flex {
-  height: 30rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
