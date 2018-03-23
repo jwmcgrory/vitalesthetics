@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: Yanone Kaffeesatz, Helvetica, sans-serif;
   font-size: 16px;
   margin: 0;
   background-color: white;
@@ -9,7 +9,7 @@ body {
 header {
   height: 33rem;
   padding-top: 1rem;
-  background-color: #F69A9A;
+  background-color: #F9CDAE;
 }
 
 header img {
@@ -20,45 +20,109 @@ header img {
 }
 
 nav {
-  background-color: #EF4566;
+  background-color: #F69A9A;
   color: White;
   max-width: 960px;
   margin: 0 auto;
+  font-family: Lobster;
+  font-size: 1.3rem;
 }
 
-ul {
+nav ul {
   list-style: none;
   margin: 0;
 }
 
-li {
+nav li {
   display: inline-block;
-  padding: 0.75rem 1.25rem;
-}
-
-main {
-  background-color: #C8C8A9;
+  padding: 0.6rem 1.25rem;
+  color: white;
 }
 
 .about {
-  background-color: #F9CDAE;
-}
-
-.flex {
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: #F69A9A;
+  padding: 2rem 0;
+  line-height: 2.5;
+  font-size: 1.2rem;
 }
 
 .about img {
   width: 20rem;
 }
 
-.row img {
+.services {
+  background-color: #F69A9A;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+.services img {
   width: 100%;
 }
+
+
+
+.prices {
+  background-color: #F69A9A;
+  line-height: 2;
+  font-size: 1.2rem;
+}
+
+.prices ul {
+  margin: 0;
+}
+
+.contact {
+  background-color: #F9CDAE;
+  font-size: 1.2rem;
+}
+
+/* Parralax */
+
+.background1 {
+  background-image: url(../images/essential-oils.jpg);
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: white;
+  opacity:0.8;
+}
+
+.background2 {
+  background-image: url(../images/massage.jpg);
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: white;
+  opacity:0.8;
+}
+
+/* Universal */
+
+h1 {
+  font-size: 6rem;
+  font-family: Lobster;
+}
+
+h2 {
+  font-size: 4rem;
+  font-family: Lobster;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: Lobster;
+}
+
+/* Media queries */
 
 @media only screen and (max-width: 960px) {
   header {
@@ -66,15 +130,24 @@ main {
   }
 }
 
-@media only screen and (max-width: 700px) {
-   {
-    display: none;
+@media only screen and (max-width: 767px) {
+    .container-fluid { 
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .background1 {
+  background-attachment: scroll;
+  }
+    .background2 {
+    background-attachment: scroll;
   }
 }
 
-@media only screen and (max-width: 470px) {
+
+
+/*@media only screen and (max-width: 470px) {
   h1 {
     font-size: 2rem;
 
   }
-}
+}*/
