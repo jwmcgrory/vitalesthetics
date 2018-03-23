@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  height: 33rem;
+  height: 31rem;
   padding-top: 1rem;
   background-color: #F9CDAE;
 }
@@ -31,12 +31,18 @@ nav {
 nav ul {
   list-style: none;
   margin: 0;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 nav li {
   display: inline-block;
   padding: 0.6rem 1.25rem;
   color: white;
+}
+
+nav li:hover {
+  color: blue;
 }
 
 .about {
@@ -57,10 +63,30 @@ nav li {
 }
 
 .services img {
+  padding-top: 2rem;
   width: 100%;
 }
 
+.break {
+  background-color: #F69A9A;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+}
 
+.break li {
+  color: white;
+  margin: 0;
+  list-style: none;
+}
+
+.break li:hover {
+  color: blue;
+}
+
+.break a {
+  text-decoration: none;
+}
 
 .prices {
   background-color: #F69A9A;
@@ -90,6 +116,7 @@ nav li {
   align-items: center;
   color: white;
   opacity:0.8;
+  margin: 0;
 }
 
 .background2 {
@@ -103,6 +130,7 @@ nav li {
   align-items: center;
   color: white;
   opacity:0.8;
+  margin: 0;
 }
 
 /* Universal */
@@ -131,9 +159,16 @@ h3 {
 }
 
 @media only screen and (max-width: 767px) {
-    .container-fluid { 
+    .container-fluid {
     padding-left: 0;
     padding-right: 0;
+  }
+  .services img {
+    padding-top: 0;
+  }
+  .flex-reverse {
+    display: flex;
+    flex-direction: column-reverse;
   }
   .background1 {
   background-attachment: scroll;
@@ -145,9 +180,18 @@ h3 {
 
 
 
-/*@media only screen and (max-width: 470px) {
-  h1 {
-    font-size: 2rem;
-
+@media only screen and (max-width: 470px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
   }
-}*/
+  nav a {
+    width: 100%;
+    border-bottom: 1px solid black;
+    text-align: center;
+  }
+  header img {
+    width: 15rem;
+    margin-top: 2.5rem;
+  }
+}
